@@ -1,71 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.container{
-    width: 100%;
-    height: auto;
+body , html {
+    height: 100%;
+}
+header{
+    width: 90%;
+    height:80px;
     margin: auto;
     color: #fff;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 
+}
+header nav{
+    height: 100%;
+    padding-top: 18px;
+    align-items: center;
+    line-height: 25px;
+}
+header nav h2{
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+}
+header nav h6{
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 .page-1{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0,0, 0.8);
-
+    height: 100%;
+    margin: auto;
+    color: #fff;
+    background-image: url(./img/nasa2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.nav{
-    width: 100%;
-    height: 100px; 
-    text-align: center;
-    line-height: 100px;   
- 
+.background{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.nav h2{
-    font-size: 30px;
+.background .ses{
+    width: 90%;
+    padding-top: 70px;
+    margin: auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 .wikipedia{
-    width: 600px;
-    height: 300px;
-    border: 1px solid red;
+    width: 40%;
+    margin:5% auto;
+    align-items: center;
     text-align: center;
-    margin:70px auto;
+    padding-bottom: 20px;
 }
 .wikipedia h1{
     font-size: 55px;
     padding-bottom: 25px;
-    padding-top: 25px;
+    font-family: 'Caveat', cursive;
+    
 }
 .wikipedia h2{
     font-size: 25px;
     padding-bottom: 25px;
+    font-family: 'Caveat', cursive;
 }
 .wikipedia p{
-    font-size: 15px;
-}
-.effect{
-    width: 100%;
-    height: 100px;
-    border: 1px solid red;
-    background-image: url(./img/ses.png);
-    background-position: center;
-    background-size: cover;
-    margin: 100px auto;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
 }
 .page-2{
     width: 100%;
-    height: 100vh;
-    border: 1px solid blue;
-    background-color: rgba(0, 0,0, 0.8);
-}
+    height: 100%;
+    background-color: rgba(0, 0, 0,1);   
+} 
 .page-2 .content{
     width: 100%;
     height: auto;
     display: flex;
-    border:1px solid orange;
+    justify-content: space-between;    
 }
 .page-2 img{
     width: 50%;
+    height: 86vh;
+
+}
+.col{
+    width: 50%;
+    height: 86vh;
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    color: #fff;
+    margin-top: 20%;
+} 
+  /* Slides */
+.mySlides {
+    display: none;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.mySlides h3 , p{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.page-3{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,1);   
+} 
+.page-3 .content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;    
+}
+.page-3 img{
+    width: 50%;
+    height: 86vh;
+}
+.col-2{
+    width: 45%;
+    height: 86vh;
+    color: #fff;
+    margin: auto;
+    display: flex;
+}
+.col-2 ul{
+    width: 50%;
+    position: relative;
+    top: 2%;
+    left: 2%;
+    letter-spacing:1px;
+    line-height: 25px;
+    font-family: 'Caveat', cursive;
+    padding-left: 25px;
+}
+.page-4{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,1);   
+} 
+.container , .container-2{
+    width: 80%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+    transition: 0.5s;
+    border: 3px solid white;
+    border-radius:10px;
+}
+.box:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.box img{
+    width: 200px;
+    height: 200px;
+    border-radius:10px;
+
 }
